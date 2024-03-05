@@ -47,14 +47,59 @@ body, ul, li, p, a, label, input, div {
 }
 .h3 {
   font-family: "Comfortaa", sans-serif !important;
-  font-size: 22.72px !important;
+  font-size: 23px !important;
 }
 
+.h4 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 22px !important;
+  font-weight: 300;
+}
+
+.linkbottom{
+  color: #D3B05F;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  text-decoration: underline;
+}
+
+.linkbottom:hover{
+  color: #D3B05F;
+  cursor: pointer;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  text-decoration: underline;
+}
+
+.link {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #D3B05F;
+  text-decoration: underline;
+
+}
 .carouseltitel{
   font-family: "Comfortaa", sans-serif !important;
   font-size: 56px !important;
   font-weight: 500 !important;
   margin-bottom: 50px;
+}
+
+.full-width-image {
+
+  width: 100%;
+  height: 42rem;
+}
+
+.image-centered{
+  border-radius: 35px;
+  width: 45%;
+  height: 42rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 /* General */
@@ -69,12 +114,67 @@ body, ul, li, p, a, label, input, div {
 .bg-black { background-color: #1d242d !important;}
 .bg-success { background-color: #D3B05F !important;}
 
+
+
+.card-price{
+  background-color: white;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 40px;
+  transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+  font-family: "roboto", sans-serif !important;
+  font-size: 22px !important;
+}
+
+.card-euro{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Comfortaa", sans-serif !important;
+    font-size: 35px !important;
+  }
+
+
+.card {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+  transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.card:hover {
+  box-shadow: 0 20px 24px rgba(33, 41, 52, 0.5); /* Increasing shadow size on hover */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.flower:before {
+  content: "🌸";
+  margin-right: 10px; /* Add some spacing between the flower and text */
+}
 /* Buttons (CTA's) */
+.banner{
+  display: block;
+  width: 100%; /* Span the width of the screen */
+  padding: 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  
+
+}
 #buttonAfspraak {display: inline-block; background-color: #D3B05F;color: white;padding: 12px 24px;font-size: 22px;font-weight: bold;text-align: center;text-decoration: none; border-radius: 8px;
   border: none; cursor: pointer; transition: background-color 0.3s; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
 
 #buttonAfspraak:hover {background-color: #E5CC93;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);}
+
+#buttonAfspraakContact {display: inline-block; background-color: #D3B05F;color: white;padding: 12px 24px;font-size: 14px;font-weight: bold;text-align: center;text-decoration: none; border-radius: 8px;
+    border: none; cursor: pointer; transition: background-color 0.3s; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+  
+#buttonAfspraakContact:hover {background-color: #E5CC93;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);}
 
   
 .ziemeer {display: inline-block; background-color: #D3B05F;color: white;padding: 12px 24px;font-size: 20px; font-weight: bold;text-align: center;text-decoration: none; border-radius: 8px;
@@ -83,7 +183,20 @@ body, ul, li, p, a, label, input, div {
 .ziemeer:hover{ background-color: #E5CC93;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);}
 
-
+.boeknu{
+  display: block;
+  width: 15rem ; /* Adjust width as needed */
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 3px solid #D3B05F;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
 .btn-success {
   background-color: #D3B05F !important;
 }
@@ -121,8 +234,49 @@ body, ul, li, p, a, label, input, div {
 #templatemo_nav_top a:hover { color: #D3B05F; text-decoration: underline; text-underline-offset:5px;}
 #templatemo_nav_top * { font-size: .91em !important; }
 #templatemo_main_nav a { color: #212934;}
-#templatemo_main_nav a:hover { color: #D3B05F; text-decoration: underline; text-underline-offset:5px;}
+#templatemo_main_nav a:hover { color: #D3B05F; text-decoration: underline; text-underline-offset:7px;}
 #templatemo_main_nav .navbar .nav-icon { margin-right: 20px;}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: display 1s ease; /* Add transition for smooth appearance */
+}
+
+/* Style the links inside the dropdown */
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Delay hiding the dropdown menu when the mouse leaves it */
+.dropdown-menu:hover {
+  display: block;
+}
+
+/* Hide the dropdown menu when the mouse leaves it after a delay */
+.dropdown-menu:not(:hover) {
+  display: none;
+}
+
+
 
 
 /* Hero Carousel */
@@ -160,11 +314,12 @@ body, ul, li, p, a, label, input, div {
 .product-wap .product-color-dot.color-dot-black { background:#000000;}
 .product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}
 .product-wap .product-color-dot.color-dot-green { background:#0bff7e;}
+
 .card.product-wap .card .product-overlay {
   background: rgba(0,0,0,.2);
   visibility: hidden;
   opacity: 0;
-  transition: .3s;
+  transition: 1s;
 }
 .card.product-wap:hover .card .product-overlay {
   visibility: visible;
@@ -212,7 +367,7 @@ body, ul, li, p, a, label, input, div {
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      background: #EBF5FF;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -237,12 +392,12 @@ body, ul, li, p, a, label, input, div {
 }
 /* Carousel Hero */
 #template-mo-zay-hero-carousel .carousel-indicators li {
-  margin-top: px;
-  background-color: #212934;
+  margin-top: 5px;
+  background-color: #EBF5FF;
 }
 #template-mo-zay-hero-carousel .carousel-control-next i,
 #template-mo-zay-hero-carousel .carousel-control-prev i {
-  color: #212934 !important;
+  color: #EBF5FF !important;
   font-size: 2.8em !important;
 }
 /* Carousel Brand */
@@ -309,7 +464,7 @@ body, ul, li, p, a, label, input, div {
 
     .map-container iframe {
         width: 100%;
-        height: 750px;
+        height: 830px;
         border: 0;
     }
 /* Footer */

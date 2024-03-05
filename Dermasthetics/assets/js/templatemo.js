@@ -55,3 +55,20 @@ $(document).ready(function() {
     // End roduct detail
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to scroll to the bottom
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+
+    // Adding click event listener to the link
+    document.querySelector('.linkbottom').addEventListener('click', function() {
+        scrollToBottom();
+    });
+});
+
